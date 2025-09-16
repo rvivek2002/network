@@ -25,4 +25,7 @@ resource "azurerm_virtual_network" "example" {
   tags = {
     environment = "Production"
   }
+
 }
+####
+####
