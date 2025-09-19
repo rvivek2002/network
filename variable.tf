@@ -32,8 +32,9 @@ variable "vnet_location" {
     condition  =  contains(["eastus", "eastus1", "westus"], var.vnet_location) 
     error_message = "This location is not allowed"
   }
+
+}
 variable "dns_servers" {
   type = list(string)
 }
 
-}
