@@ -21,7 +21,7 @@ resource "azurerm_virtual_network" "example" {
   location            = var.vnet_location
   resource_group_name = var.vnet_resource_group
   address_space       = var.address_space
-  dns_servers         = ["10.0.0.4", "10.0.0.5"]
+  dns_servers         = var.dns_servers
   tags = {
     environment = "Production"
   }
@@ -29,3 +29,4 @@ resource "azurerm_virtual_network" "example" {
 }
 ####
 ####
+
